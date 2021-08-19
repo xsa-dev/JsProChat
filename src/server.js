@@ -1,5 +1,5 @@
-import Hapi from '@hapi/hapi';
-import { Server } from 'socket.io';
+const Hapi = require('@hapi/hapi');
+const { Server } = require('socket.io');
 
 const port = process.env.PORT || 3001;
 const host = process.env.NODE_ENV === 'development' ? 'localhost' : null;
@@ -128,4 +128,4 @@ process.on('unhandledRejection', (err) => {
     process.exit(1);
 });
 
-init();
+init().then(() => console.log("..."));

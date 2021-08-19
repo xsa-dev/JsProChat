@@ -6,7 +6,7 @@
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
     "build": "env NODE_ENV=production webpack --config webpack.config.js",
     "start": "node dist/server.js",
-    "dev": "nodemon dist/server.js"
+    "dev": "node src/server.js"
   },
   "repository": "git@github.com:Severenit/JsProChat.git",
   "author": "Zar Zakharov <severenit@gmail.com>",
@@ -17,7 +17,7 @@
     "ts-loader": "^8.0.17",
     "typescript": "^4.1.5",
     "webpack": "4.44.2",
-    "webpack-cli": "3.3.12",
+    "webpack-cli": "^3.3.12",
     "webpack-node-externals": "2.5.2"
   },
   "dependencies": {
