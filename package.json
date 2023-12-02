@@ -1,6 +1,6 @@
 {
   "name": "JsProChat",
-  "version": "1.0.0",
+  "version": "1.0.1dev",
   "main": "src/server.js",
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
